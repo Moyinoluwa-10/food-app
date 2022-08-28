@@ -36,7 +36,10 @@ const Home = () => {
           <div>
             <h2>Order <span>food</span> anytime, anywhere</h2>
             <p>Browse from our list of specials to place your order and have food delivered to you in no time. Affordable, tasty and fast!</p>
-            <div><img src={GoogleIcon} alt='googleicon' style={{marginRight: '10px'}} /> <img src={AppleIcon} alt='appleicon' /></div>
+            <div>
+              <Link to={'/'}><img src={GoogleIcon} alt='googleicon' style={{marginRight: '10px'}} className='download'/></Link> 
+              <Link to={'/'}><img src={AppleIcon} alt='appleicon' className='download'/></Link> 
+              </div>
           </div>
           
           <div className='image-container'><img src={Image1} alt='image1' /></div>
