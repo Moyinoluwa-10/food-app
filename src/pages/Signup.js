@@ -34,7 +34,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const user = JSON.stringify(userData);
-    sessionStorage.getItem('user') === null && sessionStorage.setItem('user', user)
+    sessionStorage.setItem('user', user)
     navigate('/login')
   }
 
