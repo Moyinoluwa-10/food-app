@@ -8,7 +8,7 @@ import Image7 from '../assets/images/image7.png'
 import Image8 from '../assets/images/image8.png'
 import Image9 from '../assets/images/image9.png'
 import Image10 from '../assets/images/image10.png'
-import Cart from '../components/Cart'
+// import Cart from '../components/Cart'
 // import Checkout from '../components/Checkout'
 
 const Dashboard = () => {
@@ -17,10 +17,8 @@ const Dashboard = () => {
 
   useEffect(() => {
     const signupData = sessionStorage.getItem('user');
-    console.log(signupData);
     const userInfo = JSON.parse(signupData);
     setUserData(userInfo);
-    console.log(userData);
   }, []); 
 
   const name = userData?.name
