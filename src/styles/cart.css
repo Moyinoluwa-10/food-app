@@ -1,0 +1,136 @@
+.cart {
+    width: 100%;
+    height: 100vh;
+    background: rgba(196, 196, 196, 0.42);
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+}
+
+.cart .cart-container {
+    width: 50%;
+    margin-left: auto;
+    height: 100vh;
+    background-color: white;
+    padding: 30px;
+}
+
+.cart .column1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 50%;
+}
+
+.cart.box1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+.cart .amount {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 33px;
+    color: #00302E;
+}
+
+.cart .price {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 33px;
+    color: #00302E;
+}
+
+.cart .status {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 33px;
+    color: #3A8F4D;
+}
+
+.cart h3 {
+    margin: 0;
+    color: #00302E;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 33px;
+}
+
+.cart .remove {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 33px;
+    color: #C92C33;
+    margin: 0;
+    margin-top: -10px;
+}
+
+.cart .image-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cart .image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart .normal {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.69);   
+}
+
+.cart h2 {
+    color: #00302E;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.cart .normal.column1 {
+    width: 50%;
+}
+
+.cart .normall {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.69);   
+}
+
+.cart .total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.cart button {
+    width: 60%;
+    display: block;
+    background: #00302E;
+    border: 1px solid rgba(251, 221, 187, 0.51);
+    border-radius: 5px;
+    height: 50px;
+    color: #F3C294;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 40px;
+    cursor: pointer;
+}

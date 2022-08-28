@@ -1,0 +1,164 @@
+.home {
+    background-color: hsl(178, 100%, 9%);
+    color: #FFFFFF;
+    padding: 0 70px;
+}
+
+.home .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.home .nav img {
+    width: 180px;
+}
+
+.home .nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.home .nav ul a {
+    font-size: 21px;
+    line-height: 33px;
+    text-decoration: none;
+}
+
+.home .nav ul a:hover {
+    color: #FBDDBB;
+}
+
+.home .nav ul a.unique {
+    color: #00302E;
+    font-size: 17px; 
+    line-height: 33px;
+    font-weight: 600; 
+    background-color: #E2B887; 
+    border-radius: 7px; 
+    padding: 5px 15px 8px 15px;
+}
+
+.home .section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 140px 0;
+}
+
+.home .section1 h2 {
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 500;
+    color: white;
+    max-width: 650px;
+    margin-bottom: 0;;
+} 
+
+.home .section1 h2 span {
+    color: #FBDDBB;
+}
+
+.home .section1 p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px;
+    color: rgba(255, 255, 255, 0.74);
+    max-width: 600px;
+}
+
+.home .section1 .image-container {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.home .section1 .image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.home .section2 {
+    text-align: center;
+}
+
+.home .section2 h3 {
+    font-size: 36px;
+    line-height: 33px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.home .section2 p {
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.83);
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.home .section3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 120px 50px 120px;
+}
+
+.home .section4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px 150px 100px;
+}
+
+.home .section4 h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color:#FBDDBB;
+    line-height: 33px;
+}
+
+.home .section4 p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 33px;
+    max-width: 500px;
+}
+
+.home .section4 input {
+    background: #F7F7F7;
+    border: 1px solid #B3B3B3;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    padding: 0 20px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.home .section4 form ::placeholder {
+    font-size: 15px;
+    color: #B2B2B2;
+    font-weight: 400;
+}
+
+.home .section4 button {
+    background:  #FBDDBB;
+    border: 1px solid #B3B3B3;
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
+    margin-right: 10px;
+    color: #00302E;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
