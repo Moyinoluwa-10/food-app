@@ -18,8 +18,6 @@ const Signup = () => {
     password: password,
   };
 
-  console.log(userData);
-
   const showHandler = () => {
     setShow(!show);
     if (!show) {
@@ -54,6 +52,7 @@ const Signup = () => {
                 type="text"
                 name="name"
                 placeholder="Your First Name"
+                required="required"
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value);
@@ -66,6 +65,7 @@ const Signup = () => {
                 type="email"
                 name="email"
                 placeholder="Your Email address"
+                required="required"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
               />
@@ -76,6 +76,7 @@ const Signup = () => {
                 type={show ? "text" : "password"}
                 name="password"
                 placeholder="Your Password"
+                required="required"
                 autoComplete={"new-pasword"}
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
