@@ -103,7 +103,14 @@ const Home = () => {
               name="email"
               placeholder="gregphillips@gmail.com"
             />
-            <button type="submit">Get notified</button>
+            <button
+              type="submit"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
+              Get notified
+            </button>
           </form>
         </div>
       </div>
