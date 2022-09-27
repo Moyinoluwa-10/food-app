@@ -63,7 +63,7 @@
     font-size: 18px;
     cursor: pointer;
     transition: all 0.25s ease;
-    font-family: inherit;
+    font-family: 'Rubik', sans-serif;
 }
 
 .signup button:hover {
