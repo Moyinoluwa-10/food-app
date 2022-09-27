@@ -1,11 +1,13 @@
 .home {
     background-color: hsl(178, 100%, 9%);
-    color: #FFFFFF;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
 }
 
 .home .nav {
     display: flex;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
     align-items: center;
     padding: 50px 70px;
 }
@@ -25,15 +27,16 @@
     font-size: 21px;
     line-height: 33px;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .home .nav ul a.unique {
-    color: #00302E;
-    font-size: 17px; 
+    color: #00302e;
+    font-size: 17px;
     line-height: 33px;
-    font-weight: 600; 
-    background-color: #E2B887; 
-    border-radius: 7px; 
+    font-weight: 600;
+    background-color: #e2b887;
+    border-radius: 7px;
     padding: 5px 15px 8px 15px;
 }
 
@@ -50,10 +53,10 @@
     font-weight: 500;
     color: white;
     max-width: 650px;
-} 
+}
 
 .home .section1 h2 span {
-    color: #FBDDBB;
+    color: #fbddbb;
 }
 
 .home .section1 p {
@@ -67,7 +70,6 @@
 .home .section1 .download {
     transition: all 0.2s ease;
 }
-
 
 .home .section1 .download:hover {
     transform: translateY(5px);
@@ -114,6 +116,7 @@
 
 .home .section4 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 80px 70px 150px 70px;
@@ -122,7 +125,7 @@
 .home .section4 h3 {
     font-size: 36px;
     font-weight: 700;
-    color:#FBDDBB;
+    color: #fbddbb;
     line-height: 33px;
 }
 
@@ -135,10 +138,11 @@
 }
 
 .home .section4 input {
-    background: #F7F7F7;
-    border: 1px solid #B3B3B3;
+    background: #f7f7f7;
+    border: 1px solid #b3b3b3;
     border-radius: 5px;
     width: 300px;
+    max-width: 100%;
     height: 50px;
     padding: 0 20px;
     margin: 0;
@@ -147,18 +151,41 @@
 
 .home .section4 form ::placeholder {
     font-size: 15px;
-    color: #B2B2B2;
+    color: #b2b2b2;
     font-weight: 400;
 }
 
 .home .section4 button {
-    background:  #FBDDBB;
-    border: 1px solid #B3B3B3;
+    background: #fbddbb;
+    border: 1px solid #b3b3b3;
     border-radius: 5px;
     width: 180px;
     height: 50px;
     margin-right: 10px;
-    color: #00302E;
+    color: #00302e;
     font-size: 18px;
     font-weight: 500;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 500px) {
+    .home .section4 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 80px 50px 150px 50px;
+    }
+
+    .home .section4 h3 {
+        font-size: 26px;
+        line-height: 33px;
+    }
+
+    .home .section4 p {
+        font-size: 14px;
+        line-height: 25px;
+        max-width: 100%;
+    }
+
 }
