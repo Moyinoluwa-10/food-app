@@ -39,7 +39,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="image-container">
-        <img src={LoginImage} alt="login" />
+        <img src={LoginImage} alt="loginimage" />
       </div>
 
       <div className="form-container">
