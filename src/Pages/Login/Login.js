@@ -15,7 +15,7 @@ const Login = () => {
   let errorComponent;
 
   if (error) {
-    errorComponent = <Error errorMessage={"Email or Password not correct"} />;
+    errorComponent = <Error errorMessage={"Email or Password is incorrect"} />;
   }
 
   useEffect(() => {
