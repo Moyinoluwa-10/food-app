@@ -8,8 +8,8 @@ import Image7 from "../../assets/images/image7.png";
 import Image8 from "../../assets/images/image8.png";
 import Image9 from "../../assets/images/image9.png";
 import Image10 from "../../assets/images/image10.png";
-// import Cart from '../components/Cart'
-// import Checkout from '../components/Checkout'
+// import Cart from "../../Components/Cart/Cart";
+// import Order from "../../Components/Order/Order";
 
 const Dashboard = () => {
   const [userData, setUserData] = useState({});
@@ -24,8 +24,6 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      {/* <Checkout /> */}
-      {/* <Cart /> */}
       <Sidebar />
       <div className="dashboard-container">
         <div className="title">

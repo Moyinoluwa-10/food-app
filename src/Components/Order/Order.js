@@ -1,6 +1,6 @@
 import React from "react";
 import "./order.css";
-import Image from "../assets/images/image5.png";
+import Image from "../../assets/images/image5.png";
 
 const Order = () => {
   return (
@@ -12,9 +12,7 @@ const Order = () => {
 
         <div className="order-box">
           <div>
-            <p className="normal column1" style={{ color: "red" }}>
-              Item
-            </p>
+            <p className="normal column1">Item</p>
           </div>
           <div>
             <p className="normal">Qty</p>

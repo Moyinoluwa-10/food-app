@@ -1,5 +1,6 @@
 import React from "react";
 import "./sidebar.css";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,
@@ -12,24 +13,34 @@ import Logo from "../../assets/svg/logo.svg";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div>
+      <div className="image-container">
         <img src={Logo} alt="logo" />
       </div>
 
-      <div className="menu-container">
-        <div className="menu active">
-          <FontAwesomeIcon icon={faHome} className="icon" /> <p>Dashboard</p>
-        </div>
-        <div className="menu">
-          <FontAwesomeIcon icon={faUser} className="icon" /> <p>Your profile</p>
-        </div>
-        <div className="menu">
-          <FontAwesomeIcon icon={faNoteSticky} className="icon" /> <p>Orders</p>
-        </div>
-        <div className="menu">
-          <FontAwesomeIcon icon={faCartShopping} className="icon" />{" "}
-          <p>Your Cart</p>
-        </div>
+      <div className="">
+        <ul>
+          <li>
+            <NavLink exact activeClassName="active" to={"./"}>
+              <FontAwesomeIcon icon={faHome} className="icon" /> Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <Link exact to={"./"}>
+              <FontAwesomeIcon icon={faUser} className="icon" /> Your Profile
+            </Link>
+          </li>
+          <li>
+            <NavLink exact activeClassName="active" to={"./order"}>
+              <FontAwesomeIcon icon={faNoteSticky} className="icon" /> Orders
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact activeClassName="active" to={"./cart"}>
+              <FontAwesomeIcon icon={faCartShopping} className="icon" /> Your
+              Cart
+            </NavLink>
+          </li>
+        </ul>
       </div>
     </div>
   );
